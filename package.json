@@ -1,0 +1,33 @@
+{
+  "name": "content-boilerplate-modernized",
+  "version": "1.0.0",
+  "description": "Modernized OmmaWorks content boilerplate with Webpack",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "webpack serve --mode development --open",
+    "build": "webpack --mode production && node build-inline.js",
+    "build:dev": "webpack --mode development",
+    "build:prod": "MEDIA_ENV=prod npm run build",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "tsc --noEmit --watch"
+  },
+  "author": "OmmaWorks Team <tech@ommaworks.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@babel/preset-typescript": "^7.23.0",
+    "@types/node": "^20.8.0",
+    "babel-loader": "^9.1.3",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.2.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
